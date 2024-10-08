@@ -9,10 +9,10 @@ export default function Hero() {
     <section id="home"
       className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container"
     >
-      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
+      <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-20">
         
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[62px] max-sm:leading-[70px] font-bold">
-          <span className='xl:bg-white xl:whitespace-nowrap relative z-10 xl:pr-10 max-sm:text-[48px] max-sm:leading-[50px]'>Revolutionizing</span>
+        <h1 className="mt-10 font-palanquin text-8xl max-md:text-[62px] max-md:leading-[70px] font-bold">
+          <span className='xl:bg-white xl:whitespace-nowrap relative z-10 xl:pr-10 max-md:text-[48px] max-md:leading-[50px]'>Revolutionizing</span>
           <br />
           <span className="text-violet-900 inline-block mt-3">Plasma</span> Technology
         </h1>
@@ -20,12 +20,12 @@ export default function Hero() {
         Discover cutting-edge plasma innovations in health, industry, and sustainability
         </p>
         
-        <Button label="Explore Our Products" to="/#capabilities" />
+        <Button label="Explore Our Products" to="/#products" />
 
-        <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+        <div className="flex justify-start items-start flex-wrap w-full mt-12 gap-16">
           {statistics.map(stat => (
-            <div key={stat.label}>
-              <p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+            <div key={stat.label + Math.random()}>
+              <p className="text-4xl font-palanquin font-bold ">{stat.value}</p>
               <p className="leading-7 font-montserrat text-slate-gray w-8 text-sm">{stat.label}</p>
             </div>
           ))

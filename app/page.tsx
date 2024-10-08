@@ -1,13 +1,13 @@
 
-import Hero from "@/components/sections/hero";
-import NavBar from "@/components/sections/navbar";
-import AboutUs from "@/components/sections/about";
-import Capabilities from "@/components/sections/capabilities";
-import Footer from "@/components/sections/footer";
+import Hero from '@/components/sections/hero';
+import NavBar from '@/components/sections/navbar';
+import AboutUs from '@/components/sections/about';
+import Products from '@/components/sections/products';
+import Footer from '@/components/sections/footer';
 
 export default function Home() {
   return (
-    <main className='relative'>
+    <main>
       <NavBar />
       <section className='xl:padding-l wide:padding-r padding-b'>
         <Hero />
@@ -18,7 +18,7 @@ export default function Home() {
       </section>
 
       <section className='bg-pale-blue padding'>
-        <Capabilities />
+        <Products />
       </section>
 
       <section className=' bg-violet-300 padding-x padding-t pb-8'>
