@@ -31,7 +31,7 @@ export const footerLinks = [
   {
     title: 'Help',
     links: [
-      { name: 'About us', link: '/' },
+      { name: 'About us', link: '/#about-us' },
       { name: 'FAQs', link: '/' },
       { name: 'Privacy policy', link: '/' },
     ],

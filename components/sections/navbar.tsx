@@ -23,10 +23,10 @@ export default function NavBar() {
 
   const getNavLinks = () => {
     return navLinks.map((link) => (
-      <li key={link.label + Math.random()}>
+      <li key={link.label + Math.random()} className="py-4" >
         <Link
           href={link.href}
-          className="font-montserrat leading-normal z-20 py-2"
+          className="font-montserrat leading-normal z-20 cursor-pointer"
         >
           {link.label}
         </Link>
@@ -55,7 +55,7 @@ export default function NavBar() {
           </div>
       </nav>
 
-      {isMenuOpen ? <ul className="hidden w-full bg-violet-200 py-4 text-center max-md:block rounded-md">
+      {isMenuOpen ? <ul className="hidden w-full bg-violet-200  py-4 text-center max-md:block rounded-md">
         {getNavLinks()}
       </ul> : null }
     </header>
