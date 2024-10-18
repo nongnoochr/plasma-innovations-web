@@ -1,6 +1,8 @@
 import { facebook, instagram, twitter } from '@/assets/icons';
 import plasmaWaterImg from '@/assets/images/plasma_water.png';
-import npcBoxImg from '@/assets/images/npc_box.png';
+
+// [TODO] Temporary use a logo until the product image is available
+import npcBoxImg from '@/assets/images/logo.png';
 
 export const navLinks = [
   { href: '#about-us', label: 'About Us' },
