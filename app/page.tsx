@@ -1,30 +1,19 @@
+import { Header } from "@/components/header"
+import { HeroSection } from "@/components/hero-section"
+import { SolutionsSection } from "@/components/solutions-section"
+import { ProductsSection } from "@/components/products-section"
+import { Footer } from "@/components/footer"
 
-import Hero from '@/components/sections/hero';
-import NavBar from '@/components/sections/navbar';
-import AboutUs from '@/components/sections/about';
-import Products from '@/components/sections/products';
-import Footer from '@/components/sections/footer';
-
-export default function Home() {
+export default function HomePage() {
   return (
-    <main>
-      <NavBar />
-      <section className='xl:padding-l wide:padding-r padding-b'>
-        <Hero />
-      </section>
-
-      <section className='padding'>
-        <AboutUs />
-      </section>
-
-      <section className='bg-pale-blue padding'>
-        <Products />
-      </section>
-
-      <section className=' bg-violet-300 padding-x padding-t pb-8'>
-        <Footer />
-      </section>
- 
-    </main>
-  );
+    <div className="min-h-screen bg-black text-white">
+      <Header />
+      <main>
+        <HeroSection />
+        <SolutionsSection />
+        <ProductsSection />
+      </main>
+      <Footer />
+    </div>
+  )
 }
